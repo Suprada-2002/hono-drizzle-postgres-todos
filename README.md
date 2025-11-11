@@ -1,11 +1,5 @@
-To install dependencies:
-```sh
-bun install
+## Steps:
+1. create a skeleton hono project
 ```
-
-To run:
-```sh
-bun run dev
+bun create hono@latest project-names
 ```
-
-open http://localhost:3000
