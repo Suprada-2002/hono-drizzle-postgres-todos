@@ -19,7 +19,7 @@ export const createUser = async (email: string, password: string) => {
 }
 
 export const getTodosByUserId = async (userId: UUID) => {
-  const [todos] = await db.select().from(todosTable).where(eq(todosTable.id, userId)).orderBy(desc(todosTable.createdAt));
+  const todos = await db.select().from(todosTable).where(eq(todosTable.userId, userId)).orderBy(desc(todosTable.createdAt));
    return todos;
 }
 
